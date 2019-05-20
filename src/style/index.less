@@ -1,0 +1,260 @@
+@import "common/mobile.less";
+@import "common/animate.min.css";
+@import "iconfont/iconfont.css";
+
+body,
+html,
+#app{
+  width: 100%;
+  height: 100%;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+}
+/**/
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+/*无数据*/
+.noData {
+  padding-top: 350px;
+  background-color: #fff;
+  .content_box {
+    width: 100%;
+    position: relative;
+    div {
+      p {
+        text-align: center;
+        img {
+          width: 220px;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+      h4 {
+        color: #666;
+        font-size: 37px;
+        line-height: 80px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        font-size: 28px;
+        color: #bebebe;
+      }
+    }
+  }
+}
+/*活动申请按钮*/
+.apply{
+  width: 96%;
+  white-space: nowrap;
+  color: white;
+  margin: auto;
+  line-height: 70px;
+  border-radius: 15px;
+  background-color: #dc001a;
+  a{
+    color: white;
+    font-size: 28px;
+  }
+}
+
+.mint-spinner-double-bounce{
+  display: inline-block;
+}
+#bottom{
+  margin: auto;
+}
+/* 首页tab滑块 */
+.home {
+  .cube-tab-bar-slider {
+    background: linear-gradient(to right,#3b68b2, #57489b) !important;
+  }
+}
+// 加载中
+.mint-indicator-wrapper{
+  z-index: 9999;
+}
+// 绑定银行卡
+.mint-popup,
+.picker,
+.picker-items {
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+//活动图片
+.activity{
+  .content{
+    .activityDetail{
+      img{
+        max-width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+//下拉展开动画
+.bounce-enter-active {
+  animation: downIn 0.3s;
+}
+.bounce-leave-active {
+  animation: downIn 0.3s reverse;
+}
+@keyframes downIn {
+  0% {
+    transform: translateY(-580px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.openNav {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: #212529;
+  transition: 0.3s;
+  z-index: 99;
+  li {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+    i {
+      display: inline-block;
+      width: 68px;
+      height: 80px;
+      line-height: 80px;
+      overflow: hidden;
+      margin-right: 20px;
+      margin-left: 35%;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+    span {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 80px;
+    }
+    a {
+      display: block;
+      color: white;
+      font-size: 25px;
+    }
+    &:last-child{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+  .center{
+    text-align: center;
+  }
+}
+// loading
+.cube-loading-spinners {
+  display: inline-block !important;
+}
+
+// 遮罩层
+.maskLayer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+
+/*提现成功*/
+.success {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 588px;
+    height: 550px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    li{
+      padding: 0 30px;
+    }
+    li:first-child {
+      font-size: 180px;
+      color: #57d80a;
+      margin-top: 40px;
+    }
+
+    li:nth-child(2) {
+      margin-top: 20px;
+      line-height: 58px;
+      font-size: 36px;
+    }
+
+    li:nth-child(3) {
+      color: #999999;
+      line-height: 48px;
+    }
+
+    li:last-child {
+      padding: 0;
+      width: 100%;
+      position: absolute;
+      bottom: 30px;
+
+      span {
+        display: inline-block;
+        width: 228px;
+        height: 88px;
+        border: 1px solid #dedddb; /*no*/
+        border-radius: 10px;
+        line-height: 88px;
+        text-align: center;
+        font-size: 32px;
+      }
+
+      span:first-child {
+        margin-right: 5px;
+        background-color: #f6f6f6;
+      }
+
+      span:last-child {
+        margin-left: 5px;
+        background: linear-gradient(#fec830, #f37336);
+        color: white;
+      }
+    }
+  }
+}
+//
+.activity{
+  .mint-loadmore-bottom{
+    margin-bottom: 0 !important;
+  }
+}
+
+
